@@ -6,8 +6,8 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ## Current Status
 
-**Active Phase:** Phase 4 — Databricks PySpark Embedding Pipeline & Phase 7 — Next.js Frontend Dashboard (Mock)
-**Active Plan:** None (not started)  
+**Active Phase:** Phase 7 — Next.js Frontend Dashboard (Mock)
+**Active Plan:** 7.1 `init_nextjs.sh` (Scaffolding Next.js)  
 **Milestone:** 1 of 1  
 **Last Updated:** 2026-05-25
 
