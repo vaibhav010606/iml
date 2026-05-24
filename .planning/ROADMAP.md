@@ -10,7 +10,7 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ---
 
-## Phase 1 — Environment & Data Ingestion ✅ READY TO PLAN
+## Phase 1 — Environment & Data Ingestion ✅ COMPLETED
 
 **Owner:** Vaibhav  
 **Goal:** Prove the environment works and data flows into a DataFrame cleanly.
@@ -26,7 +26,7 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ---
 
-## Phase 2 — Embedding Generation ✅ READY TO PLAN
+## Phase 2 — Embedding Generation ✅ COMPLETED
 
 **Owner:** Vaibhav  
 **Goal:** Convert text corpus to 384-dim float32 vectors.
@@ -42,7 +42,7 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ---
 
-## Phase 3 — FAISS Product Quantization Index 🔒 BLOCKED ON PHASE 2
+## Phase 3 — FAISS Product Quantization Index ✅ COMPLETED
 
 **Owner:** Vaibhav  
 **Goal:** Build, train, and query a `IndexPQ` index — the core compression thesis.
@@ -59,7 +59,7 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ---
 
-## Phase 4 — Databricks PySpark Embedding Pipeline 🔒 BLOCKED ON PHASE 3
+## Phase 4 — Databricks PySpark Embedding Pipeline 🟡 READY TO PLAN
 
 **Owner:** Vaibhav  
 **Goal:** Scale embedding generation to millions of records using distributed compute.
@@ -111,7 +111,7 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ---
 
-## Phase 7 — Next.js Frontend Dashboard 🔒 BLOCKED ON PHASE 6 (API contract)
+## Phase 7 — Next.js Frontend Dashboard 🟡 READY TO PLAN (Mock API)
 
 **Owner:** Vishal (can start from Phase 3 with mock API)  
 **Goal:** Clean search UI that queries the live endpoint and renders results.
@@ -149,10 +149,10 @@ Vishal can build Phase 7 against a mock API response from Phase 3 onwards. Integ
 
 | Phase | Status | Notes |
 |-------|--------|-------|
-| Phase 1 | 🟡 Ready | Start here — answer open dataset question first |
-| Phase 2 | ⬜ Pending | |
-| Phase 3 | ⬜ Pending | |
-| Phase 4 | ⬜ Pending | Needs GCS bucket and Databricks access |
+| Phase 1 | ✅ Done | System logs ingested locally (27k total, 2k sample) |
+| Phase 2 | ✅ Done | all-MiniLM-L6-v2 embeddings generated for sample |
+| Phase 3 | ✅ Done | FAISS PQ index trained and queried successfully |
+| Phase 4 | 🟡 Ready | Needs GCS bucket and Databricks access |
 | Phase 5 | ⬜ Pending | |
 | Phase 6 | ⬜ Pending | Needs GCP IAM access |
-| Phase 7 | ⬜ Pending | Vishal — can start after Phase 3 schema is locked |
+| Phase 7 | 🟡 Ready | Vishal — can start using mock API matching Phase 3 schema |

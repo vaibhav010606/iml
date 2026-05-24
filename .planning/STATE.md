@@ -6,7 +6,7 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ## Current Status
 
-**Active Phase:** Phase 1 — Environment & Data Ingestion  
+**Active Phase:** Phase 4 — Databricks PySpark Embedding Pipeline & Phase 7 — Next.js Frontend Dashboard (Mock)
 **Active Plan:** None (not started)  
 **Milestone:** 1 of 1  
 **Last Updated:** 2026-05-25
@@ -17,8 +17,8 @@ _Enterprise Semantic Search Engine — v1.0_
 
 > These must be answered before Phase 1 Plan 1.2 can execute.
 
-- [ ] **What dataset will Vaibhav use?** Options: system logs, folder of text files, Wikipedia snippet, custom docs. Decision determines `load_dataset.py` implementation.
-- [ ] **Dataset size?** Determines Databricks cluster config in Phase 4.
+- [x] **What dataset will Vaibhav use?** ✅ **System logs** (`/var/log/` on Kali Linux) — realistic enterprise data, already on-disk.
+- [x] **Dataset size?** 27,138 raw lines (sampled to 2,000 for local prototype, full 27k for cloud scale up).
 - [ ] **GCS bucket name / Databricks workspace URL?** Required for Phases 4–6.
 - [ ] **Frontend deployment target?** Vercel, Cloud Run, or local? Affects Phase 7 env config.
 
@@ -26,7 +26,9 @@ _Enterprise Semantic Search Engine — v1.0_
 
 ## Completed Phases
 
-(None yet)
+- **Phase 1:** Environment & Data Ingestion
+- **Phase 2:** Embedding Generation
+- **Phase 3:** FAISS Product Quantization Index
 
 ---
 
@@ -35,3 +37,4 @@ _Enterprise Semantic Search Engine — v1.0_
 | Date | Event |
 |------|-------|
 | 2026-05-25 | Project initialized. 7-phase roadmap created. |
+| 2026-05-25 | Completed local prototype (Phases 1-3). FAISS PQ index verified with 2k sampled logs. Ready for cloud scale-up and frontend mock dev. |

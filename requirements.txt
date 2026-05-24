@@ -1,0 +1,11 @@
+# Install with:
+#   uv pip install --python venv/bin/python \
+#     --extra-index-url https://download.pytorch.org/whl/cpu \
+#     -r requirements.txt
+
+torch               # CPU-only; use pytorch.org/whl/cpu index
+sentence-transformers
+faiss-cpu
+pandas
+numpy
+tqdm
